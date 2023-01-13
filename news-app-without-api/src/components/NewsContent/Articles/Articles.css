@@ -1,0 +1,97 @@
+.add__articles {
+    float: right;
+    /* margin: -26px; */
+    margin-top: -60px;
+    margin-right: 35px;
+}
+    
+    
+    .modal__form {
+        border: 3px solid #eae4e4;
+        margin: 15px;
+    }
+    .article__heading {
+        text-align: center;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .close__button {
+        float: right;
+        margin-top: -45px;
+    }
+    .modal__form label {
+        margin: 8px 8px 3px 8px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .date__control {
+       
+        margin: 8px 8px 3px 8px;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+    .modal__form input[type=date] {
+        font: inherit;
+        padding: 0.5rem;
+        border-radius: 6px;
+        border: 1px solid #605b5b;
+        width: 15rem;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .modal__form input[type=text] {
+        width: 96%;
+        padding: 10px 10px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid #605b5b;
+        box-sizing: border-box;
+    }
+    .modal__form textarea {
+        width: 96%;
+    padding: 10px 10px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #605b5b;
+    box-sizing: border-box;
+    }
+    .publish__button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 8px 8px 250px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+.delete__article {
+    border: none;
+    background: orangered;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    /* float: right; */
+    /* margin: 10px; */
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.update__article {
+    border: none;
+    background: cornflowerblue;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    /* margin: 10px; */
+    margin-left: 45px;
+    margin-bottom: 15px;
+}

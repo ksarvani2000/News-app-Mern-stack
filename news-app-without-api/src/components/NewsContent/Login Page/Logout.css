@@ -1,0 +1,35 @@
+.logout {
+    box-sizing: border-box;
+    box-shadow: 0 2px 20px #ccd0d9;
+    border-radius: 10px;
+    width: 700px;
+    border: 5px solid cadetblue;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.logout h3 {
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 18px;
+}
+
+.da{
+    margin-right: 200px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.su {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 10px; */
+    /* margin-left: 200px; */
+    margin-top: 10px;
+}

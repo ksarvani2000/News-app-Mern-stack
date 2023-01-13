@@ -1,0 +1,35 @@
+/* .backgroundImageDisplay {
+    background-image: url("https://th.bing.com/th/id/OIP.KHsx_H-_PDkSPfv4qoAMVQAAAA?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.profileRow {
+    display: flex;
+    margin: 20px;
+}
+
+.profileRow form {
+    box-sizing: border-box;
+    width: 70%;
+    margin-left: 150px;
+    padding: 20px;
+    /* margin: 10px 10px 10px 150px; */
+    border: 2px solid darkgrey;
+}
+
+.profileRow label {
+    font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.profileRow input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #605b5b;
+    /* width: 15rem; */
+    width: 100%;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    pointer-events: none;
+}
