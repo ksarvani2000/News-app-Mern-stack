@@ -1,8 +1,20 @@
 import React from "react";
 
 function Covid19NewsArticles({ covidTrackerData }) {
-  const emailNotifications = sessionStorage.getItem("login-data")
-  const subscribeHandler = () => {
+  const emailId = sessionStorage.getItem("login-data")
+  const subscribeHandler = (event) => {
+    event.preventDefault()
+    window.Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "k.sarvani2000@gmail.com",
+      Password : "2E28971EFB0094FDA575C09446600F172DA3",
+      Server : "smtp.elasticemail.com",
+      Port : 2525,
+      To : `${emailId}`,
+      From : "k.sarvani2000@gmail.com",
+      Subject : `You have subsrcibed to ${covidTrackerData.source.name}`,
+      Body : `Thank you for subsrcibing for ${covidTrackerData.source.name} news. You will be receiving daily updated from ${covidTrackerData.source.name}. Check out the latest news here ${covidTrackerData.url}`
+    }).then(msg => alert(msg))
     alert(`Your will receive notification from ${covidTrackerData.source.name}`)
   }
   return (
@@ -15,7 +27,7 @@ function Covid19NewsArticles({ covidTrackerData }) {
       <span className="news__author">Author : {covidTrackerData.author}</span> <br />
       <span className="news__published">Published At : {covidTrackerData.publishedAt}</span>
       <span className="news__source">Source : {covidTrackerData.source.name}</span>
-      <a href={`mailto:${emailNotifications}?subject=You have subscribed to ${covidTrackerData.source.name}`}><button onClick={subscribeHandler}>Subscribe</button></a>
+      <button onClick={subscribeHandler}>Subscribe</button>
     </div>
     </div>
   );

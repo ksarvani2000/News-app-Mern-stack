@@ -1,8 +1,20 @@
 import React from "react";
 
 function SportsArticles({ sportsData }) {
-  const emailNotifications = sessionStorage.getItem("login-data")
-  const subscribeHandler = () => {
+  const emailId = sessionStorage.getItem("login-data")
+  const subscribeHandler = (event) => {
+    event.preventDefault()
+    window.Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "k.sarvani2000@gmail.com",
+      Password : "2E28971EFB0094FDA575C09446600F172DA3",
+      Server : "smtp.elasticemail.com",
+      Port : 2525,
+      To : `${emailId}`,
+      From : "k.sarvani2000@gmail.com",
+      Subject : `You have subsrcibed to ${sportsData.source.name}`,
+      Body : `Thank you for subsrcibing for ${sportsData.source.name} news. You will be receiving daily updated from ${sportsData.source.name}. Check out the latest news here ${sportsData.url}`
+    }).then(msg => alert(msg))
     alert(`Your will receive notification from ${sportsData.source.name}`)
   }
   return (
@@ -15,7 +27,7 @@ function SportsArticles({ sportsData }) {
       <span className="news__author">Author : {sportsData.author}</span> <br />
       <span className="news__published">Published At : {sportsData.publishedAt}</span>
       <span className="news__source">Source : {sportsData.source.name}</span>
-      <a href={`mailto:${emailNotifications}?subject=You have subscribed to ${sportsData.source.name}`}><button onClick={subscribeHandler}>Subscribe</button></a>
+      <button onClick={subscribeHandler}>Subscribe</button>
     </div>
     </div>
   );

@@ -8,7 +8,7 @@ export const NewsContextProvider = (props) => {
   const [sportsData, setSportsData] = useState('')
   const apiKey = "72f47afc0004424daecb9ab5728ee666";
   //const apiKey = "c9d9a0ccaaa34bb5a1252e3dc102036d"
-
+ 
   useEffect(() => {
     fetch(
         `http://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=${apiKey}`

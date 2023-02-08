@@ -129,7 +129,7 @@ const emailReducer = (state, action) => {
         _id, name, emailid, mobile, password
       })
     });
-    const res = await (result).json()
+    //const res = await (result).json()
       props.handleRegistration(_id)
       sessionStorage.setItem("login-data", _id)
     //console.log(res)
